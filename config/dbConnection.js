@@ -9,7 +9,7 @@ const dbConnect= async ()=>{
         console.log("DB Connected✅")
     }
     catch(err){
-        console.log("error❌",error)
+        console.log("error❌",err)
     }
 }
 //rana bch nexportiw haja

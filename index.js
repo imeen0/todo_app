@@ -11,10 +11,10 @@ const app=express()
 //appel ll connection mta db
 connection()
 
-
+app.use(express.json())
 const port =process.env.PORT
 console.log("hi!")
 app.listen(port, () => console.log(`server runnig on:${port}`))
  app.use("/tasks",taskRoutes)
- app.use("/tasks/:id",taskRoutes)
+
 
